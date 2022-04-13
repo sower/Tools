@@ -1,380 +1,237 @@
-# Markdown
-> 一种轻量级标记语言，在 2004 由约翰·格鲁伯（John Gruber）创建。
-> Markdown 编写的文档可以导出 HTML、Word、图像、PDF、Epub 等多种格式的文档。
-
-
-
-
-<br />
-<br />
-
-[markdown-cheatsheet](https://github.com/tchapi/markdown-cheatsheet)
-
-<br />
-
-
-# 标题
-文字下方使用 = ， - 标记一级，二级标题
-# 一级标题
-## 二级标题
-使用 # 号加空格表示 1-6 级标题，级别等同个数
-# 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-##### 五级标题
-###### 六级标题
-
-
-# 段落
-段落没有特殊的格式，段落的换行是两个以上空格加上回车
-# 字体
-文字两侧成对加* 或 _表示粗斜体
-
-<br />
-
-_一对符号_
-
-<br />
-
-_斜体文本_
-
-<br />
-
-**两对符号**
-
-<br />
-
-**粗体文本**
-
-<br />
-
-**_三对符号_**
-
-<br />
-
-**_粗斜体文本_**
-
-<br />
-
-文字两侧各2个==
-
-<br />
-
-高亮
-# 删除线
-文字的两端加上两个波浪线~
-
-<br />
-
-~~删除~~
-# 下划线
-文字的两端加上两个+
-
-<br />
-
-下划
-# 分割线
-
----
-
-一行中用三个以上的*、-、底线来建立一个分隔线，行内不能有其他东西，可以在中间插入空格
-
----
-
-
----
-
-
----
-
-# 脚注
-格式：[^脚注名]
-
-<br />
-
-带有脚注的文本[[1]](#fn1)。
-# 列表
-无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：
-
-- 第一项
-- 第二项
-- 第三项
-- 第一项
-- 第二项
-- 第三项
-- 第一项
-- 第二项
-- 第三项
-
-有序列表使用数字并加上 . 号来表示
-
-1. 第一项
-1. 第二项
-1. 第三项
-
-列表嵌套只需在子列表中的选项添加四个空格即可：
-
-1. 第一项：
-   - 第一项嵌套的第一个元素
-   - 第一项嵌套的第二个元素
-2. 第二项：
-   - 第二项嵌套的第一个元素
-   - 第二项嵌套的第二个元素
-# 引用
-符号 > 加空格：
-> 区块
-> 引用
-
-可嵌套
-> 最外层
-> 第一层嵌套
-> 第二层嵌套
-
-# 代码格式
-一个函数或片段的代码可以用反引号（`）把它包起来
-
-<br />
-
-C语言的 `printf()` 函数
-
-<br />
-
-代码区块使用 4 个空格或者一个制表符（Tab 键）
-```
-int a,b;
-```
-也可用 ``` 包裹一段代码（可以指定一种语言）
-```
-string s("markdown");
-```
-# 链接
-格式：[链接名称](链接地址)
-
-<br />
-
-或
-
-<br />
-
-<链接地址>
-
-<br />
-
-这是一个链接 [markdown](https://www.appinn.com/markdown/index.html#html)
-
-<br />
-
-链接也可以用变量来代替，文档末尾附带变量地址：
-
-<br />
-
-这个链接用 1 作为网址变量 [Google](http://www.google.com/) ([Google][1])
-
-<br />
-
-这个链接用 runoob 作为网址变量 [菜鸟教程](http://www.runoob.com/)
-
-<br />
-
-然后在文档的结尾为变量赋值（网址）
-# 图片
-格式：![属性文本](图片地址)
-
-<br />
-
-或
-
-<br />
-
-![属性文本](图片地址 "可选标题")
-
-<br />
-
-![](http://static.runoob.com/images/runoob-logo.png#crop=0&crop=0&crop=1&crop=1&id=oyzLH&originHeight=39&originWidth=258&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-
-<br />
-
-![](http://static.runoob.com/images/runoob-logo.png#crop=0&crop=0&crop=1&crop=1&id=rraRe&originHeight=39&originWidth=258&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)RUNOOB
-# 表格
-用 | 来分隔不同的单元格
-
-<br />
-
-用 - 来分隔表头和其他行
-
-| 表头 | 表头 |
-| --- | --- |
-| 单元格 | 单元格 |
-| 单元格 | 单元格 |
-
-可以设置表格的对齐方式：
-
-<br />
-
--: 设置内容和标题栏居右对齐
-
-<br />
-
-:- 设置内容和标题栏居左对齐
-
-<br />
-
-:-: 设置内容和标题栏居中对齐
-
-| 左对齐 | 右对齐 | 居中对齐 |
-| --- | --- | --- |
-| 左 | 右 | 中 |
-| 单元格 | 单元格 | 单元格 |
-
-# 任务清单
-未完成事项 - [ ]
-
-<br />
-
-已完成事项 - [x]
-
--  未完成事项
--  已完成事项
-# 转义
-使用反斜杠(\)转义特殊字符
-
-<br />
-
-支持以下符号前面加上反斜杠来帮助插入普通的符号：
-
-<br />
-
-\   反斜线
-
-<br />
-
-`    反引号
-
-<br />
-
-*   星号
-
-<br />
-
-_   下划线
-
-<br />
-
-{}   花括号
-
-<br />
-
-[]   方括号
-
-<br />
-
-()   小括号
-
-<br />
-
-#   井号
-
-<br />
-
-+   加号
-
-<br />
-
--   减号
-
-<br />
-
-.    英文句点
-
-<br />
-
-!    感叹号
-# 流程图
-一段流程图语法以 ```  开头，以 ``` 结尾
-
-<br />
-
-在 ``` 后另起一行，书写graph XX，用以确定将要绘制的流程图及其类型（XX表示流程图类型）。
-
-<br />
-
-流程图分为竖向和横向两大类，竖向包括自上而下和自下而上两种顺序，横向包括从右到左和从左到右两种顺序。
-
-<br />
-
-其对应语法分别为：graph TB/graph BT/graph RL/graph LR。
-
-<br />
-
-A---B 无箭头
-
-<br />
-
-A-->B 有箭头
-
-<br />
-
-A-->|插入文本|B
-
-<br />
-
-TB - top bottom（自上而下）
-```
-graph TB
-A-->B
-```
-BT - bottom top（自下而上）
-```
-graph BT
-A-->B
-```
-RL - right left（从右到左）
-```
-graph RL
-A-->B
-```
-LR - left right（从左到右）
-```
-graph LR
-A[A]---|插入文本|B[B]
-B-->|插入文本|Y
-```
-圆形(())
-```
-graph TB
-A((圆))
-```
-长方形[]
-```
-graph TB
-A[长方形]
-```
-菱形{}
-```
-graph TB
-A{菱形}
-```
-# 甘特图
-甘特图能够将你最近的计划直观地显示出来
-
-<br />
-
-以 ```  开头，以 ``` 结尾
-
-<br />
-
-在 ``` 后另起一行，书写gantt
-
-<br />
-
-用dateFormat YYYY-MM-DD规定时间轴，title （标题文本）表示甘特图标题。
-
-<br />
-<br />
-
-
----
-
-1. 对脚注的说明 [↩︎](#fnref1)
-多词典查询谷歌翻译
+# Bookmarks
+
+# 导航
+[云上应用](https://www.imcloudapp.com/)
+[REWORK 导航](https://rework.tools/)
+[大数据导航](http://hao.199it.com/)
+[龙轩导航](http://ilxdh.com/)
+[国外网站推荐](http://www.egouz.com/)
+[HiPPTER](http://www.hippter.com/)
+
+# Tools
+[Wikipedia](https://www.wikipedia.org/)
+[Google 翻译](https://translate.google.cn/)
+[有道翻译](http://fanyi.youdao.com/)
+[百度识图](http://image.baidu.com/?fr=shitu)
+[Vidyard](https://www.vidyard.com/)
+## Practical
+[Grammar Check Online](https://www.nounplus.net/grammarcheck/)
+[360查字体](https://fonts.safe.360.cn/)
+[数字帝国](https://zh.numberempire.com/)
+[天眼查](https://www.tianyancha.com/)
+[网址缩短](http://suo.im/)
+
+## Convert
+[Table Convert](https://tableconvert.com/)
+[iLovePDF](https://www.ilovepdf.com/zh_cn)
+[SmallPDF](https://smallpdf.com/)
+[Voice2v](https://voice2v.com/)
+[Curious Concept](https://curiousconcept.com/)
+[MyScript](http://webdemo.myscript.com/)
+
+# Temp
+## E-Mail
+[10分钟邮箱](https://10minutemail.net/?lang=zh-cn)
+[Snapmail](https://www.snapmail.cc/)
+[Mail.tm](https://mail.tm/en/)
+[Moakt Email-H](https://www.moakt.com/zh/mail)
+[Temp Mail - 10M](https://temp-mail.org/zh/)
+
+## NEWS
+[网络剪贴板](https://netcut.cn/)
+[Note.ms](https://note.ms/hyl)
+[verybin](https://verybin.com/)
+[Privnote](https://privnote.com/#)
+[Vuash](http://www.vua.sh/)
+[阅后即焚](https://yhjf.cc/)
+[Sharetext](http://sharetext.co/)
+
+# 图
+## 搜图
+### 聚合图网
+[The Stocks](http://thestocks.im/)
+[AllTheFreeStock](https://allthefreestock.com/)
+[多搜搜](http://duososo.com/index.php)
+[Everypixel](https://www.everypixel.com/)
+[librestock](https://librestock.com/)
+[搜图导航](https://www.91sotu.com/)
+[logosc](https://www.logosc.cn/so/)
+
+[Unsplash](https://unsplash.com/)
+[Pixabay](https://pixabay.com/)
+[Pexels](https://www.pexels.com/)
+[Peakpx](http://www.peakpx.com/)
+[PickPik](https://www.pickpik.com/)
+[StockSnap](https://stocksnap.io/)
+[PNG images](http://pngimg.com/)
+[IMGBIN](https://imgbin.com/)
+[Colorhub](https://colorhub.me/)
+## 压图
+[TinyPNG](https://tinypng.com/)
+[iLoveIMG](https://www.iloveimg.com/zh-cn)
+[Picdiet](https://www.picdiet.com/zh-cn)
+[智图](https://zhitu.isux.us/)
+[img.top](https://img.top/)
+## 图工具
+[Photopea](https://www.photopea.com/)
+[Pho.to](http://makeup.pho.to/zh/)
+[PHOTOMOSH](https://photomosh.com/)
+[照片实验室](https://photolab.me/)
+[PhotoFunia](http://photofunia.com/cn/)
+[AlteredQualia](https://alteredqualia.com/)
+[Photo Collages](https://www.photovisi.com/zh/collages)
+[Vector Magic](https://zh.vectormagic.com/)
+[Bigjpg](http://bigjpg.com/)
+[Waifu2x](http://waifu2x.udp.jp/)
+[搞定杂乱像素](https://zh.pixfix.com/)
+[AI Image Enlarger](http://imglarger.com/Tw)
+[Smart Resize](https://www.smartresize.com/)
+[Remove](https://www.remove.bg/)
+[BgRemover](http://www.aigei.com/bgremover/)
+[剪切魔术](https://clippingmagic.com/)
+[改图宝](http://www.gaitubao.com/)
+[ColouriseSG](https://colourise.sg/#colorize)
+[Colorize](https://colorize.cc/)
+[Nod to the Rhythm](http://nodtotherhythm.com/)
+
+## Map
+[天地图](http://www.tianditu.gov.cn/)
+[AmCharts](http://pixelmap.amcharts.com/)
+[地图慧](http://c.dituhui.com/apps)
+[免费地图](https://d-maps.com/)
+[发现中国](https://www.ageeye.cn/)
+## icon
+[U钙网](http://www.uugai.com/)
+[颜文字工具大全](https://www.megaemoji.com/cn/)
+[Emoji Builder](https://phlntn.com/emojibuilder/)
+[YEELOGO](http://yeelogo.com/#/)
+[图标和图形生成器](https://zh-cn.cooltext.com/)
+[Instant Logo Search](http://instantlogosearch.com/)
+[图标坊](https://lilac.gitlab.io/IconStudio/index.html)
+[Icons8](https://icons8.com/)
+[Iccpic](https://iccpic.com/)
+[EASYICON](https://www.easyicon.net/)
+[IconPng](http://www.icontuku.com/)
+[Noun Project](https://thenounproject.com/)
+[Very Icon](http://www.veryicon.com/)
+## Wallpaper
+[Wallhaven](https://wallhaven.cc/)
+[GameWallpapers](https://www.gamewallpapers.com/)
+[WallpapersCraf](https://wallpaperscraft.com/)
+[WallpaperMaiden](https://www.wallpapermaiden.com/)
+[4k Wallpapers](https://wallpapershome.com/)
+[极简壁纸](https://bz.zzzmh.cn/)
+[Wallroom](https://wallroom.io/)
+[Papers](http://papers.co/)
+[WallHere](https://wallhere.com/)
+[Desktoppr](https://www.desktoppr.co/)
+
+
+# Blog
+[今日热榜](https://tophub.today/)
+[WikiHow](https://zh.wikihow.com/%E9%A6%96%E9%A1%B5)
+[不死鸟](https://iao.su/)
+[场库](https://www.vmovier.com/)
+[吾爱破解](https://www.52pojie.cn/)
+[Slant](https://www.slant.co/)
+[阮一峰](http://www.ruanyifeng.com/blog/)
+[直播吧](https://www.zhibo8.cc/)
+
+
+# Pro
+[DevDocs](https://devdocs.io/)
+[Devhints](https://devhints.io/)
+[CCF](https://www.ccf.org.cn/)
+[LibHunt](https://www.libhunt.com/)
+## Docs
+[MDN Web](https://developer.mozilla.org/zh-CN/)
+[Microsoft Docs](https://docs.microsoft.com/zh-cn/)
+[Google Developers](https://developers.google.cn/)
+[C](https://zh.cppreference.com/w/%E9%A6%96%E9%A1%B5)
+[Python](https://docs.python.org/zh-cn/3/whatsnew/index.html)
+[Node.js](https://nodejs.org/en/docs/)
+[Git](https://git-scm.com/docs/git)
+[Bootstrap](https://www.bootcss.com/)
+[Java](https://docs.oracle.com/en/java/javase/)
+[Apache](http://www.apache.org/)
+[MySQL](https://dev.mysql.com/doc/refman/8.0/en/)
+## Search
+[searchcode](https://searchcode.com/)
+[aiXcoder](https://www.aixcoder.com/#/CodeSearch)
+[grep.app](https://grep.app/)
+[Goobe](https://goobe.io/)
+[开发者知识库](https://www.itdaan.com/index.html)
+
+## Tools
+[在线工具](https://tool.lu/?fr=moulem.com)
+[爱资料](http://tool.apizl.com/)
+[万能兔](https://www.wntool.com/)
+[UU在线工具](https://uutool.cn/)
+[脚本之家](http://tools.jb51.net/)
+[码工具](http://www.matools.com/)
+[接口大全](https://www.free-api.com/)
+[Can I use](https://caniuse.com/)
+[JShaman](http://jshaman.com/)
+[Obfuscator](https://obfuscator.io/)
+## Statistic
+[百度统计流量](https://tongji.baidu.com/research/app)
+[StatCounter](https://gs.statcounter.com/)
+[NetMarketShare](https://www.netmarketshare.com/)
+[天梯榜](https://rank.kkj.cn/)
+[移动芯片](https://www.socpk.com/)
+
+## Front-end
+[Vue.js](https://v3.cn.vuejs.org/)
+[Ant Design Vue](https://2x.antdv.com/components/overview-cn/)
+[Element Plus](https://element-plus.gitee.io/#/zh-CN/component/installation)
+[CodeMyUI](https://codemyui.com/)
+[Vercel](https://vercel.com/)
+
+# Tutorial
+[W3Schools](https://www.w3schools.com/)
+[网道](https://wangdoc.com/)
+[廖雪峰](https://www.liaoxuefeng.com/)
+[菜鸟教程](http://www.runoob.com/)
+[书栈网](https://www.bookstack.cn/)
+[天赋好书](https://www.cntofu.com/)
+[C语言中文网](http://c.biancheng.net/)
+[W3school](http://www.w3school.com.cn/)
+[How2J](https://how2j.cn/)
+[极客教程](https://geek-docs.com/)
+[dunwu](https://dunwu.github.io/)
+
+
+
+
+# ToRead
+
+- [HowToCook](https://github.com/Anduin2017/HowToCook)
+
+- [free-for-dev](https://github.com/ripienaar/free-for-dev)
+- [awesome-piracy](https://github.com/Igglybuff/awesome-piracy)
+- [awesome-vue](https://github.com/vuejs/awesome-vue)
+
+- [design-resources-for-developers](https://github.com/bradtraversy/design-resources-for-developers)
+- [awesome-design](https://github.com/gztchan/awesome-design)
+- [awesome-design-systems](https://github.com/alexpate/awesome-design-systems)
+
+- [awesome-python-cn](https://github.com/jobbole/awesome-python-cn)
+- [awesome-python](https://github.com/vinta/awesome-python)
+
+- [awesome-java](https://github.com/akullpp/awesome-java)
+- [awesome-jvm](https://github.com/deephacks/awesome-jvm)
+- [useful-java-links](https://github.com/Vedenin/useful-java-links)
+
+- [spring-petclinic](https://github.com/spring-projects/spring-petclinic)
+- [mall](https://github.com/macrozheng/mall)
+- [jeecg-boot](https://github.com/jeecgboot/jeecg-boot)
+- [eladmin](https://github.com/elunez/eladmin)
+
+- [devops-exercises](https://github.com/bregman-arie/devops-exercises)
+- [awesome](https://github.com/sindresorhus/awesome)
+- [awesome-youtubers](https://github.com/JoseDeFreitas/awesome-youtubers)
+- [HelloGitHub](https://hellogithub.com/)
+- [GitHub-Chinese-Top-Charts](https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts)
+- [github-rank](https://github.com/jaywcjlove/github-rank)
+- [The Algorithms](https://github.com/TheAlgorithms)
+- [OI-wiki](https://github.com/OI-wiki/OI-wiki)
